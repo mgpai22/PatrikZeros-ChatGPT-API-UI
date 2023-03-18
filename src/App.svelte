@@ -200,7 +200,7 @@
       },
       method: "POST",
       payload: JSON.stringify({
-        model: "gpt-3.5-turbo",
+        model: "gpt-4",
         messages: msg,
         stream: true,
       }),
@@ -294,7 +294,7 @@
       console.log("Sending request");
       const response = await openai
         .createChatCompletion({
-          model: "gpt-3.5-turbo",
+          model: "gpt-4",
           messages: msg,
         })
         .catch((error: Error) => {
@@ -405,7 +405,7 @@
 <head>
   <title
     >{$conversations[$chosenConversationId].title ||
-      "PatrikZero's ChatGPT UI"}</title
+      "MGpai's forked GPT-4 UI"}</title
   >
 </head>
 <main class="bg-primary overflow-hidden">
